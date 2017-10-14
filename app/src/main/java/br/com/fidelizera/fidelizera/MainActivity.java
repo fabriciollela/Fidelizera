@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     }
     class PagerAdapter extends FragmentPagerAdapter {
 
-        String tabTitles[] = new String[]{"First Tab", "Second Tab", "Third Tab"};
+        String tabTitles[] = new String[]{"First Teste Repositórioo", "Second Tab", "Third Tab"};
         Context context;
 
         public PagerAdapter(FragmentManager fm, Context context) {
