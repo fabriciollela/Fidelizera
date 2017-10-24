@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                     TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
                     tabLayout.setupWithViewPager(viewPager);
 
-                    for(int i = 0; i < tabLayout.getTabCount(); i++){
+                    for (int i = 0; i < tabLayout.getTabCount(); i++) {
                         TabLayout.Tab tab = tabLayout.getTabAt(i);
                         tab.setCustomView(pagerAdapter.getTabView(i));
                     }
@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
+
     class PagerAdapter extends FragmentPagerAdapter {
 
         String tabTitles[] = new String[]{"First Teste Repositórioo", "Second Tab", "Third Tab"};
@@ -93,14 +94,15 @@ public class MainActivity extends AppCompatActivity {
 
 
         @Override
-        public CharSequence getPageTitle(int position){
+        public CharSequence getPageTitle(int position) {
             return tabTitles[position];
         }
 
-        public View getTabView(int position){
+        public View getTabView(int position) {
             View tab = LayoutInflater.from(MainActivity.this).inflate(R.layout.custom_tab, null);
             TextView tv = (TextView) tab.findViewById(R.id.custom_text);
             tv.setText(tabTitles[position]);
             return tab;
         }
+    }
 }

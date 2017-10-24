@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "291440078697",
+    "firebase_url": "https://fidelizera.firebaseio.com",
+    "project_id": "fidelizera",
+    "storage_bucket": "fidelizera.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291440078697:android:2531d29ec66b1f8b",
+        "android_client_info": {
+          "package_name": "br.com.fidelizera.fidelizera"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "291440078697-29oca7n2qb43br0a2rck7bdsl1qvljmi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.fidelizera.fidelizera",
+            "certificate_hash": "b02bd735bc6942e1ffb9c5cc76e03b85eafe6b24"
+          }
+        },
+        {
+          "client_id": "291440078697-l9jdrktu0hfmjsi3pierrcf0psjhr83m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFtwWNNcoegylkDoxnrzNiv4ete1Q3XYo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "291440078697-l9jdrktu0hfmjsi3pierrcf0psjhr83m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
