@@ -1,0 +1,19 @@
+page-home {
+    ion-card {
+        border-radius: 8px;
+        border: solid color($colors, secondary);
+    }
+    h3 {
+        padding-left: 1rem;
+    }
+    h2 {
+        padding-left: 1rem;
+    }
+    p {
+        padding-left: 1rem;
+    }
+    .combobox {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
