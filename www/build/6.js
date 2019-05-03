@@ -5,11 +5,11 @@ webpackJsonp([6],{
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PerfilPageModule", function() { return PerfilPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "profilePageModule", function() { return profilePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__perfil__ = __webpack_require__(353);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__profile__ = __webpack_require__(353);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,27 +20,27 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var PerfilPageModule = /** @class */ (function () {
-    function PerfilPageModule() {
+var profilePageModule = /** @class */ (function () {
+    function profilePageModule() {
     }
-    PerfilPageModule = __decorate([
+    profilePageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__perfil__["a" /* PerfilPage */],
+                __WEBPACK_IMPORTED_MODULE_3__profile__["a" /* profilePage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__perfil__["a" /* PerfilPage */]),
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__profile__["a" /* profilePage */]),
                 __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_3__perfil__["a" /* PerfilPage */]
+                __WEBPACK_IMPORTED_MODULE_3__profile__["a" /* profilePage */]
             ]
         })
-    ], PerfilPageModule);
-    return PerfilPageModule;
+    ], profilePageModule);
+    return profilePageModule;
 }());
 
-//# sourceMappingURL=perfil.module.js.map
+//# sourceMappingURL=profile.module.js.map
 
 /***/ }),
 
@@ -48,7 +48,7 @@ var PerfilPageModule = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PerfilPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return profilePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers__ = __webpack_require__(118);
@@ -64,8 +64,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var PerfilPage = /** @class */ (function () {
-    function PerfilPage(navCtrl, items, modalCtrl) {
+var profilePage = /** @class */ (function () {
+    function profilePage(navCtrl, items, modalCtrl) {
         this.navCtrl = navCtrl;
         this.items = items;
         this.modalCtrl = modalCtrl;
@@ -74,13 +74,13 @@ var PerfilPage = /** @class */ (function () {
     /**
      * The view loaded, let's query our items for the list
      */
-    PerfilPage.prototype.ionViewDidLoad = function () {
+    profilePage.prototype.ionViewDidLoad = function () {
     };
     /**
      * Prompt the user to add a new item. This shows our ItemCreatePage in a
      * modal and then adds the new item to our data source if the user created one.
      */
-    PerfilPage.prototype.addItem = function () {
+    profilePage.prototype.addItem = function () {
         var _this = this;
         var addModal = this.modalCtrl.create('ItemCreatePage');
         addModal.onDidDismiss(function (item) {
@@ -93,27 +93,27 @@ var PerfilPage = /** @class */ (function () {
     /**
      * Delete an item from the list of items.
      */
-    PerfilPage.prototype.deleteItem = function (item) {
+    profilePage.prototype.deleteItem = function (item) {
         this.items.delete(item);
     };
     /**
      * Navigate to the detail page for this item.
      */
-    PerfilPage.prototype.openItem = function (item) {
+    profilePage.prototype.openItem = function (item) {
         this.navCtrl.push('ItemDetailPage', {
             item: item
         });
     };
-    PerfilPage = __decorate([
+    profilePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-perfil',template:/*ion-inline-start:"/home/fabricio/Documentos/Projetos/Fidelizera/src/pages/perfil/perfil.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            Perfil\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>'/*ion-inline-end:"/home/fabricio/Documentos/Projetos/Fidelizera/src/pages/perfil/perfil.html"*/
+            selector: 'page-profile',template:/*ion-inline-start:"/home/fabricio/Documentos/Projetos/Fidelizera/src/pages/profile/profile.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            profile\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>'/*ion-inline-end:"/home/fabricio/Documentos/Projetos/Fidelizera/src/pages/profile/profile.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers__["b" /* Items */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */]])
-    ], PerfilPage);
-    return PerfilPage;
+    ], profilePage);
+    return profilePage;
 }());
 
-//# sourceMappingURL=perfil.js.map
+//# sourceMappingURL=profile.js.map
 
 /***/ })
 

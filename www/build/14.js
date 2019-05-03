@@ -1,15 +1,15 @@
 webpackJsonp([14],{
 
-/***/ 329:
+/***/ 328:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CartoesPageModule", function() { return CartoesPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContentPageModule", function() { return ContentPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cartoes__ = __webpack_require__(345);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__content__ = __webpack_require__(344);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,38 +20,37 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var CartoesPageModule = /** @class */ (function () {
-    function CartoesPageModule() {
+var ContentPageModule = /** @class */ (function () {
+    function ContentPageModule() {
     }
-    CartoesPageModule = __decorate([
+    ContentPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__cartoes__["a" /* CartoesPage */],
+                __WEBPACK_IMPORTED_MODULE_3__content__["a" /* ContentPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__cartoes__["a" /* CartoesPage */]),
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__content__["a" /* ContentPage */]),
                 __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_3__cartoes__["a" /* CartoesPage */]
+                __WEBPACK_IMPORTED_MODULE_3__content__["a" /* ContentPage */]
             ]
         })
-    ], CartoesPageModule);
-    return CartoesPageModule;
+    ], ContentPageModule);
+    return ContentPageModule;
 }());
 
-//# sourceMappingURL=cartoes.module.js.map
+//# sourceMappingURL=content.module.js.map
 
 /***/ }),
 
-/***/ 345:
+/***/ 344:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CartoesPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContentPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers__ = __webpack_require__(118);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -63,57 +62,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-
-var CartoesPage = /** @class */ (function () {
-    function CartoesPage(navCtrl, items, modalCtrl) {
+var ContentPage = /** @class */ (function () {
+    function ContentPage(navCtrl) {
         this.navCtrl = navCtrl;
-        this.items = items;
-        this.modalCtrl = modalCtrl;
-        this.currentItems = this.items.query();
     }
-    /**
-     * The view loaded, let's query our items for the list
-     */
-    CartoesPage.prototype.ionViewDidLoad = function () {
-    };
-    /**
-     * Prompt the user to add a new item. This shows our ItemCreatePage in a
-     * modal and then adds the new item to our data source if the user created one.
-     */
-    CartoesPage.prototype.addItem = function () {
-        var _this = this;
-        var addModal = this.modalCtrl.create('ItemCreatePage');
-        addModal.onDidDismiss(function (item) {
-            if (item) {
-                _this.items.add(item);
-            }
-        });
-        addModal.present();
-    };
-    /**
-     * Delete an item from the list of items.
-     */
-    CartoesPage.prototype.deleteItem = function (item) {
-        this.items.delete(item);
-    };
-    /**
-     * Navigate to the detail page for this item.
-     */
-    CartoesPage.prototype.openItem = function (item) {
-        this.navCtrl.push('ItemDetailPage', {
-            item: item
-        });
-    };
-    CartoesPage = __decorate([
+    ContentPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-cartoes',template:/*ion-inline-start:"/home/fabricio/Documentos/Projetos/Fidelizera/src/pages/cartoes/cartoes.html"*/'<ion-header>\n\n</ion-header>\n\n<ion-content>\n    <ion-list>\n        <ion-list-header>Follow us on Twitter</ion-list-header>\n        <ion-item>\n            <ion-icon name="ionic" item-start></ion-icon>\n            @ionicframework\n        </ion-item>\n    </ion-list>\n</ion-content>'/*ion-inline-end:"/home/fabricio/Documentos/Projetos/Fidelizera/src/pages/cartoes/cartoes.html"*/
+            selector: 'page-content',template:/*ion-inline-start:"/home/fabricio/Documentos/Projetos/Fidelizera/src/pages/content/content.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Content\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <p>\n    This is a perfect starting point for a page with primarily text content. The body is padded nicely and ready for prose.\n  </p>\n</ion-content>'/*ion-inline-end:"/home/fabricio/Documentos/Projetos/Fidelizera/src/pages/content/content.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers__["b" /* Items */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */]])
-    ], CartoesPage);
-    return CartoesPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]])
+    ], ContentPage);
+    return ContentPage;
 }());
 
-//# sourceMappingURL=cartoes.js.map
+//# sourceMappingURL=content.js.map
 
 /***/ })
 

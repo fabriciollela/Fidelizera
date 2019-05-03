@@ -42,42 +42,42 @@ webpackEmptyAsyncContext.id = 130;
 
 var map = {
 	"../pages/cards/cards.module": [
-		328,
+		330,
 		15
 	],
-	"../pages/cartoes/cartoes.module": [
-		329,
+	"../pages/content/content.module": [
+		328,
 		14
 	],
-	"../pages/content/content.module": [
-		330,
+	"../pages/home/home.module": [
+		329,
 		13
 	],
-	"../pages/home/home.module": [
+	"../pages/item-create/item-create.module": [
 		331,
 		12
 	],
-	"../pages/item-create/item-create.module": [
+	"../pages/item-detail/item-detail.module": [
 		332,
 		11
 	],
-	"../pages/item-detail/item-detail.module": [
+	"../pages/list-master/list-master.module": [
 		333,
 		10
 	],
-	"../pages/list-master/list-master.module": [
+	"../pages/login/login.module": [
 		334,
 		9
 	],
-	"../pages/login/login.module": [
-		335,
-		8
-	],
 	"../pages/menu/menu.module": [
 		336,
+		8
+	],
+	"../pages/my-cards/my-cards.module": [
+		335,
 		7
 	],
-	"../pages/perfil/perfil.module": [
+	"../pages/profile/profile.module": [
 		337,
 		6
 	],
@@ -304,8 +304,8 @@ var FirstRunPage = 'TutorialPage';
 var MainPage = 'TabsPage';
 // The initial root pages for our tabs (remove if not using tabs)
 var Tab1Root = 'HomePage';
-var Tab2Root = 'CartoesPage';
-var Tab3Root = 'PerfilPage';
+var Tab2Root = 'MyCardsPage';
+var Tab3Root = 'profilePage';
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -402,16 +402,16 @@ var AppModule = /** @class */ (function () {
                 }),
                 __WEBPACK_IMPORTED_MODULE_9_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_12__app_component__["a" /* MyApp */], {}, {
                     links: [
-                        { loadChildren: '../pages/cards/cards.module#CardsPageModule', name: 'CardsPage', segment: 'cards', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/cartoes/cartoes.module#CartoesPageModule', name: 'CartoesPage', segment: 'cartoes', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/content/content.module#ContentPageModule', name: 'ContentPage', segment: 'content', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/cards/cards.module#CardsPageModule', name: 'CardsPage', segment: 'cards', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/item-create/item-create.module#ItemCreatePageModule', name: 'ItemCreatePage', segment: 'item-create', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/item-detail/item-detail.module#ItemDetailPageModule', name: 'ItemDetailPage', segment: 'item-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/list-master/list-master.module#ListMasterPageModule', name: 'ListMasterPage', segment: 'list-master', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/my-cards/my-cards.module#MyCardsPageModule', name: 'MyCardsPage', segment: 'my-cards', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/menu/menu.module#MenuPageModule', name: 'MenuPage', segment: 'menu', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/perfil/perfil.module#PerfilPageModule', name: 'PerfilPage', segment: 'perfil', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/profile/profile.module#profilePageModule', name: 'profilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/search/search.module#SearchPageModule', name: 'SearchPage', segment: 'search', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/settings/settings.module#SettingsPageModule', name: 'SettingsPage', segment: 'settings', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },
@@ -716,8 +716,8 @@ var MyApp = /** @class */ (function () {
             { title: 'Settings', component: 'SettingsPage' },
             { title: 'Search', component: 'SearchPage' },
             { title: 'Home', component: 'HomePage' },
-            { title: 'Cartoes', component: 'CartoesPage' },
-            { title: 'Perfil', component: 'PerfilPage' },
+            { title: 'My Cards', component: 'MyCardsPage' },
+            { title: 'profile', component: 'profilePage' },
         ];
         platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.

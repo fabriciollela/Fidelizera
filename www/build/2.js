@@ -85,7 +85,7 @@ var TabsPage = /** @class */ (function () {
     }
     TabsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-tabs',template:/*ion-inline-start:"/home/fabricio/Documentos/Projetos/Fidelizera/src/pages/tabs/tabs.html"*/'<ion-tabs>\n    <ion-tab [root]="tab1Root" tabTitle="Início" tabIcon="home"></ion-tab>\n    <ion-tab [root]="tab2Root" tabTitle="Cartões" tabIcon="card"></ion-tab>\n    <ion-tab [root]="tab3Root" tabTitle="Perfil" tabIcon="person"></ion-tab>\n</ion-tabs>'/*ion-inline-end:"/home/fabricio/Documentos/Projetos/Fidelizera/src/pages/tabs/tabs.html"*/
+            selector: 'page-tabs',template:/*ion-inline-start:"/home/fabricio/Documentos/Projetos/Fidelizera/src/pages/tabs/tabs.html"*/'<ion-tabs>\n    <ion-tab [root]="tab1Root" tabTitle="Início" tabIcon="home"></ion-tab>\n    <ion-tab [root]="tab2Root" tabTitle="Meus Cartões" tabIcon="card"></ion-tab>\n    <ion-tab [root]="tab3Root" tabTitle="Perfil" tabIcon="person"></ion-tab>\n</ion-tabs>'/*ion-inline-end:"/home/fabricio/Documentos/Projetos/Fidelizera/src/pages/tabs/tabs.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["c" /* TranslateService */]])
     ], TabsPage);

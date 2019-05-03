@@ -1,15 +1,15 @@
 webpackJsonp([7],{
 
-/***/ 336:
+/***/ 335:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MenuPageModule", function() { return MenuPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MyCardsPageModule", function() { return MyCardsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__menu__ = __webpack_require__(352);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__my_cards__ = __webpack_require__(351);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,37 +20,38 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var MenuPageModule = /** @class */ (function () {
-    function MenuPageModule() {
+var MyCardsPageModule = /** @class */ (function () {
+    function MyCardsPageModule() {
     }
-    MenuPageModule = __decorate([
+    MyCardsPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__menu__["a" /* MenuPage */],
+                __WEBPACK_IMPORTED_MODULE_3__my_cards__["a" /* MyCardsPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__menu__["a" /* MenuPage */]),
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__my_cards__["a" /* MyCardsPage */]),
                 __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_3__menu__["a" /* MenuPage */]
+                __WEBPACK_IMPORTED_MODULE_3__my_cards__["a" /* MyCardsPage */]
             ]
         })
-    ], MenuPageModule);
-    return MenuPageModule;
+    ], MyCardsPageModule);
+    return MyCardsPageModule;
 }());
 
-//# sourceMappingURL=menu.module.js.map
+//# sourceMappingURL=my-cards.module.js.map
 
 /***/ }),
 
-/***/ 352:
+/***/ 351:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyCardsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers__ = __webpack_require__(118);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -62,38 +63,57 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var MenuPage = /** @class */ (function () {
-    function MenuPage(navCtrl) {
+
+var MyCardsPage = /** @class */ (function () {
+    function MyCardsPage(navCtrl, items, modalCtrl) {
         this.navCtrl = navCtrl;
-        this.rootPage = 'ContentPage';
-        // used for an example of ngFor and navigation
-        this.pages = [
-            { title: 'Sign in', component: 'LoginPage' },
-            { title: 'Signup', component: 'SignupPage' }
-        ];
+        this.items = items;
+        this.modalCtrl = modalCtrl;
+        this.currentItems = this.items.query();
     }
-    MenuPage.prototype.ionViewDidLoad = function () {
-        console.log('Hello MenuPage Page');
+    /**
+     * The view loaded, let's query our items for the list
+     */
+    MyCardsPage.prototype.ionViewDidLoad = function () {
     };
-    MenuPage.prototype.openPage = function (page) {
-        // Reset the content nav to have just this page
-        // we wouldn't want the back button to show in this scenario
-        this.nav.setRoot(page.component);
+    /**
+     * Prompt the user to add a new item. This shows our ItemCreatePage in a
+     * modal and then adds the new item to our data source if the user created one.
+     */
+    MyCardsPage.prototype.addItem = function () {
+        var _this = this;
+        var addModal = this.modalCtrl.create('ItemCreatePage');
+        addModal.onDidDismiss(function (item) {
+            if (item) {
+                _this.items.add(item);
+            }
+        });
+        addModal.present();
     };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Nav */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Nav */])
-    ], MenuPage.prototype, "nav", void 0);
-    MenuPage = __decorate([
+    /**
+     * Delete an item from the list of items.
+     */
+    MyCardsPage.prototype.deleteItem = function (item) {
+        this.items.delete(item);
+    };
+    /**
+     * Navigate to the detail page for this item.
+     */
+    MyCardsPage.prototype.openItem = function (item) {
+        this.navCtrl.push('ItemDetailPage', {
+            item: item
+        });
+    };
+    MyCardsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-menu',template:/*ion-inline-start:"/home/fabricio/Documentos/Projetos/Fidelizera/src/pages/menu/menu.html"*/'<ion-menu [content]="content">\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n</ion-menu>\n\n<ion-nav #content [root]="rootPage"></ion-nav>'/*ion-inline-end:"/home/fabricio/Documentos/Projetos/Fidelizera/src/pages/menu/menu.html"*/
+            selector: 'page-my-cards',template:/*ion-inline-start:"/home/fabricio/Documentos/Projetos/Fidelizera/src/pages/my-cards/my-cards.html"*/'<ion-header>\n\n</ion-header>\n\n<ion-content>\n    <ion-list>\n        <ion-list-header>Follow us on Twitter</ion-list-header>\n        <ion-item>\n            <ion-icon name="ionic" item-start></ion-icon>\n            @ionicframework\n        </ion-item>\n    </ion-list>\n</ion-content>'/*ion-inline-end:"/home/fabricio/Documentos/Projetos/Fidelizera/src/pages/my-cards/my-cards.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]])
-    ], MenuPage);
-    return MenuPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers__["b" /* Items */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */]])
+    ], MyCardsPage);
+    return MyCardsPage;
 }());
 
-//# sourceMappingURL=menu.js.map
+//# sourceMappingURL=my-cards.js.map
 
 /***/ })
 
