@@ -106,7 +106,7 @@ var MyCardsPage = /** @class */ (function () {
     };
     MyCardsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-my-cards',template:/*ion-inline-start:"/home/fabricio/Documentos/Projetos/Fidelizera/src/pages/my-cards/my-cards.html"*/'<ion-header>\n\n</ion-header>\n\n<ion-content>\n    <ion-list>\n        <ion-list-header>Follow us on Twitter</ion-list-header>\n        <ion-item>\n            <ion-icon name="ionic" item-start></ion-icon>\n            @ionicframework\n        </ion-item>\n    </ion-list>\n</ion-content>'/*ion-inline-end:"/home/fabricio/Documentos/Projetos/Fidelizera/src/pages/my-cards/my-cards.html"*/
+            selector: 'page-my-cards',template:/*ion-inline-start:"/home/fabricio/Projetos/Fidelizera/src/pages/my-cards/my-cards.html"*/'<ion-header>\n\n</ion-header>\n\n<ion-content>\n    <ion-list>\n        <ion-list-header>Follow us on Twitter</ion-list-header>\n        <ion-item>\n            <ion-icon name="ionic" item-start></ion-icon>\n            @ionicframework\n        </ion-item>\n    </ion-list>\n</ion-content>'/*ion-inline-end:"/home/fabricio/Projetos/Fidelizera/src/pages/my-cards/my-cards.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers__["b" /* Items */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */]])
     ], MyCardsPage);

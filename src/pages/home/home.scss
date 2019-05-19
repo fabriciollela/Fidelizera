@@ -1,8 +1,12 @@
 page-home {
-    ion-card {
-        border-radius: 8px;
-        border: solid color($colors, secondary);
-    }
+
+    .toolbar-background {
+        background: transparent;
+        border-color: transparent;
+      }
+    .no-scroll .scroll-content{
+        overflow: hidden;
+   }
     h3 {
         padding-left: 1rem;
     }
@@ -15,5 +19,16 @@ page-home {
     .combobox {
         padding-left: 1rem;
         padding-right: 1rem;
+        border-radius: 8px;
+        border: none;
+        margin-top: 10px;   
     }
+    ion-card {
+        border-radius: 8px;
+        border: solid color($colors, primary-light);
+    }
+
+
+
+      
 }

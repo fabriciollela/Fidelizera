@@ -1,6 +1,6 @@
 webpackJsonp([2],{
 
-/***/ 341:
+/***/ 340:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tabs__ = __webpack_require__(357);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tabs__ = __webpack_require__(356);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,7 +44,7 @@ var TabsPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 357:
+/***/ 356:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -85,7 +85,7 @@ var TabsPage = /** @class */ (function () {
     }
     TabsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-tabs',template:/*ion-inline-start:"/home/fabricio/Documentos/Projetos/Fidelizera/src/pages/tabs/tabs.html"*/'<ion-tabs>\n    <ion-tab [root]="tab1Root" tabTitle="Início" tabIcon="home"></ion-tab>\n    <ion-tab [root]="tab2Root" tabTitle="Meus Cartões" tabIcon="card"></ion-tab>\n    <ion-tab [root]="tab3Root" tabTitle="Perfil" tabIcon="person"></ion-tab>\n</ion-tabs>'/*ion-inline-end:"/home/fabricio/Documentos/Projetos/Fidelizera/src/pages/tabs/tabs.html"*/
+            selector: 'page-tabs',template:/*ion-inline-start:"/home/fabricio/Projetos/Fidelizera/src/pages/tabs/tabs.html"*/'<ion-tabs color="primary-intense">\n    <ion-tab [root]="tab1Root" tabTitle="Início" tabIcon="home"></ion-tab>\n    <ion-tab [root]="tab2Root" tabTitle="Meus Cartões" tabIcon="card"></ion-tab>\n    <ion-tab [root]="tab3Root" tabTitle="Perfil" tabIcon="person"></ion-tab>\n</ion-tabs>'/*ion-inline-end:"/home/fabricio/Projetos/Fidelizera/src/pages/tabs/tabs.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["c" /* TranslateService */]])
     ], TabsPage);

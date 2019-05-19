@@ -1,5 +1,5 @@
-<ion-header>
-    <ion-navbar>
+<ion-header no-shadow>
+    <ion-navbar >
         <ion-title>Olá Joãozinho</ion-title>
         <ion-buttons end>
             <ion-icon color="primary" slot="start" name="settings"></ion-icon>
@@ -10,18 +10,18 @@
 <ion-content>
     <h3>Você está em</h3>
 
-    <ion-item class="combobox">
-        <ion-label>Endereço</ion-label>
-        <ion-select [(ngModel)]="endereco">
-            <ion-option value="1">Qr 416 conjunto i santa maria</ion-option>
-            <ion-option value="2">Quadra CRNW 506 Bloco A Lote 5 Setor Noroeste</ion-option>
-            <ion-option value="3">Conjunto SHA Conjunto 1 Chácara 30A Setor Habitacional Arniqueira (Águas Claras)</ion-option>
-        </ion-select>
-    </ion-item>
-    <p>
-        Abaixo os estabelecimentos próximos:
-    </p>
-    <ion-content [ngStyle]="{'background-image': 'url(' + backgroundImage +')'}">
+    <ion-content class="no-scroll" [ngStyle]="{'background-image': 'url(' + backgroundImage +')'}">
+            <ion-item class="combobox">
+                    <ion-label >Endereço</ion-label>
+                    <ion-select [(ngModel)]="endereco">
+                        <ion-option value="1">Qr 416 conjunto i santa maria</ion-option>
+                        <ion-option value="2">Quadra CRNW 506 Bloco A Lote 5 Setor Noroeste</ion-option>
+                        <ion-option value="3">Conjunto SHA Conjunto 1 Chácara 30A Setor Habitacional Arniqueira (Águas Claras)</ion-option>
+                    </ion-select>
+                </ion-item>
+                <p>
+                    Abaixo os estabelecimentos próximos:
+                </p>
         <ion-card class="ion-card-lojas">
             <ion-list no-lines>
                 <ion-item (click)="openAulaInfoModalPage()">
