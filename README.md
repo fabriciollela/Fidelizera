@@ -4,20 +4,16 @@
 
 Projeto de criação de um aplicativo para gerenciamento de clientes fidelizados.
 
-## Table of Contents
+## Funcionalidades
 
-1. [Getting Started](#getting-started)
+1. [Lista de Lojas(#lista-lojas)
 2. [Pages](#pages)
 3. [Providers](#providers)
 4. [i18n](#i18n) (adding languages)
 
-## <a name="getting-started"></a>Getting Started
+## <a name="glista-lojas"></a>Lista de Lojas
 
-To test this starter out, install the latest version of the Ionic CLI and run:
-
-```bash
-ionic start mySuperApp super
-```
+Visualização dos estabelecimentos, com base na localização do usuário, na qual o usuário possa solicitar o processo de requisição do "carimbo" de fidelidade.
 
 ## Pages
 
